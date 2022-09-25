@@ -1,0 +1,30 @@
+.productGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+.productCard {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cardHeader {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: blueviolet;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-around;
+    background-color: pink;
+}
+
+.favButton:hover{
+    cursor: pointer;
+}
