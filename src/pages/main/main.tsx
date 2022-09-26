@@ -6,6 +6,7 @@ import mainStyle from "./main.module.css";
 import likeRender from "../../utils/likes/likeRender";
 import handleLike from "../../utils/likes/handleLike";
 import ProductCard from "../../components/product-card/ProductCard";
+import Head from "next/head";
 
 const Main: NextPage = () => {
   const [products, setProducts] = useState<IProduct[]>([]);
@@ -48,7 +49,14 @@ const Main: NextPage = () => {
     );
   });
 
-  return <div className={mainStyle.productGrid}>{convertedProducts}</div>;
+  return (
+    <div className={mainStyle.productGrid}>
+      <Head>
+        <title>NextJS Landing Page</title>
+      </Head>
+      {convertedProducts}
+    </div>
+  );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
