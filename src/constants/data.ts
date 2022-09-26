@@ -1,4 +1,4 @@
-import IProduct from "./interfaces/IProduct";
+import IProduct from "../interfaces/IProduct";
 
 const generateDataSource = (): IProduct[] => {
   const source: IProduct[] = [];
