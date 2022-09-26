@@ -13,8 +13,8 @@ const Main: NextPage = () => {
 
   let loadedProducts;
   if (typeof window !== "undefined") {
-    loadedProducts = localStorage.getItem("likedProducts")
-      ? JSON.parse(localStorage.getItem("likedProducts")!)
+    loadedProducts = sessionStorage.getItem("likedProducts")
+      ? JSON.parse(sessionStorage.getItem("likedProducts")!)
       : [];
   }
 
@@ -24,7 +24,7 @@ const Main: NextPage = () => {
 
   useEffect(() => {
     setProducts(generateDataSource());
-    localStorage.setItem("likedProducts", JSON.stringify(likedProducts));
+    sessionStorage.setItem("likedProducts", JSON.stringify(likedProducts));
   }, [likedProducts, isLiked]);
 
   const productIds = likedProducts.map((product: IProduct) => {
