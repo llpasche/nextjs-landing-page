@@ -5,7 +5,7 @@ import IProduct from "../../interfaces/IProduct";
 import mainStyle from "./main.module.css";
 import likeRender from "../../utils/likes/likeRender";
 import handleLike from "../../utils/likes/handleLike";
-import ProductCard from "../../components/product-card/ProductCard";
+import ProductCard from "../productCard/ProductCard";
 import Head from "next/head";
 
 const Main: NextPage = () => {

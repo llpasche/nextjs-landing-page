@@ -1,4 +1,4 @@
-import cardStyle from "../product-card/productCard.module.css";
+import cardStyle from "./productCard.module.css";
 import favstarWhite from "../../assets/images/favstar-white.svg";
 import favstarBlack from "../../assets/images/favstar-black.svg";
 import Image from "next/image";
